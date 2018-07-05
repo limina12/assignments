@@ -1,11 +1,9 @@
-#include<stdio.h>
-#include<string.h>
-// Read only region start
-
-int createPIN(int input1,int input2,int input3)
+#include<iostream>
+using namespace std;
+int main()
 {
-    // Read only region end
-	int a,b,c,a1,a2,b1,b2,c1,c2,e,d,e1,e2,d1,d2,sum,max;
+int input1,input2,input3,a,b,c,a1,a2,b1,b2,c1,c2,e,d,e1,e2,d1,d2,sum,max;
+cin>>input1>>input2>>input3;
 	a=input1%10;
 	input1/=10;
 	a1=input1%10;
@@ -39,8 +37,10 @@ int createPIN(int input1,int input2,int input3)
 		max=d2;
 	}
 	sum=((max*1000)+(e*100)+(e1*10)+(e2));
-	printf("%d",sum);
+cout<<sum;
 	
 	
 	
 }
+
+	
